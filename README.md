@@ -4,14 +4,14 @@ This repository contains lab exercises for the [COMP0037 Robotic Systems](https:
 
 Lab attendance will be monitored, but the exercises are **not graded**. You are welcome to discuss and help each other with these tasks and to ask for assistance and clarification from the TAs, but there is nothing to be gained by simply copying each others' work.
 
-## Install basic software
+## Install basic software (before start of term)
 
 * Install [Git](https://git-scm.com) (if you don't already have it)
 * Install [Python 3](https://www.python.org/downloads/) (if you don't already have it - AVOID PYTHON 3.10) 
 * Download [Visual Studio Code](https://code.visualstudio.com/), an easy-to-use editor
 * Install the [Python Plugin](https://code.visualstudio.com/docs/python/python-tutorial/) and test the hello world example
 
-## Install software to support this module
+## Install software to support this module (will be made available the first week of term)
 
 * Download the material from the Moodle page of the module: [COMP0037 Robotic Systems](https://moodle.ucl.ac.uk/course/view.php?id=1392&section=0) and put the lab material in a folder named "comp0037-labs":
     ```
