@@ -4,15 +4,19 @@ This repository contains lab exercises for the [COMP0037 Robotic Systems](https:
 
 Lab attendance will be monitored, but the exercises are **not graded**. You are welcome to discuss and help each other with these tasks and to ask for assistance and clarification from the TAs, but there is nothing to be gained by simply copying each others' work.
 
-## Introduction
+## Install basic software
 
 * Install [Git](https://git-scm.com) (if you don't already have it)
 * Install [Python 3](https://www.python.org/downloads/) (if you don't already have it - AVOID PYTHON 3.10) 
 * Download [Visual Studio Code](https://code.visualstudio.com/), an easy-to-use editor
+* Install the [Python Plugin](https://code.visualstudio.com/docs/python/python-tutorial/) and test the hello world example
+
+## Install software to support this module
+
 * Download the material from the Moodle page of the module: [COMP0037 Robotic Systems](https://moodle.ucl.ac.uk/course/view.php?id=1392&section=0) and put the lab material in a folder named "comp0037-labs":
     ```
     cd comp0037-labs
-    git clone https://github.com/UCL/COMP0037-21_22.git
+    git clone https://github.com/UCL/COMP0037-22_23.git
     ```
 * Open the cloned folder in Visual Studio Code: File > Open Folder > select the cloned repository folder
 * Open a new terminal in Visual Studio Code and make sure you are in the folder 'comp0037-labs'
