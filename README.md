@@ -55,11 +55,5 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
         * Go to your virtual environment folder in "comp0037-labs" > Scripts > python.exe > Select Interpreter (Windows) 
         * Go to your virtual environment folder in "comp0037-labs" > bin > python.exe (or just python if you don't see the .exe extension)> Select Interpreter (Unix/MacOS) 
     * Insted of "Select Interpreter" you should now see "3.x.x('venvcomp0088':venv)
-* Read the week's lab exercises document `COMP0037_Lab_N.pdf`
-* Add your code to the script `Lab_1.py`
-* Run the script either from the command line to see your code in action:
-    ```sh
-    python Lab_N.py
-    ```
-  or directly using the play button in the notebook. 
+
 
