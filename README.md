@@ -1,6 +1,6 @@
 ## About
 
-This repository contains lab exercises for the [COMP0037 Robotic Systems](https://moodle.ucl.ac.uk/course/view.php?id=30085) module for taught MSc students at UCL, delivered in Spring 2023. Exercises are designed to be attempted in the on-campus lab sessions on Friday afternoon, though you are free to do additional work in your own time if you wish.
+This repository contains lab exercises for the [COMP0037 Robotic Systems](https://moodle.ucl.ac.uk/course/view.php?id=30085&section=0) module for taught MSc students at UCL, delivered in Spring 2023. Exercises are designed to be attempted in the on-campus lab sessions on Friday afternoon, though you are free to do additional work in your own time if you wish.
 
 Lab attendance will be monitored, but the exercises are **not graded**. You are welcome to discuss and help each other with these tasks and to ask for assistance and clarification from the TAs, but there is nothing to be gained by simply copying each others' work.
 
@@ -13,7 +13,7 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
 
 ## Install software to support this module (will be made available the first week of term)
 
-* Download the material from the Moodle page of the module: [COMP0037 Robotic Systems](https://moodle.ucl.ac.uk/course/view.php?id=1392&section=0) and put the lab material in a folder named "comp0037-labs":
+* Download the material from GitHub: [COMP0037 Robotic Systems](https://github.com/UCL/COMP0037_22-23) and put the lab material in a folder named "comp0037-labs":
     ```
     cd comp0037-labs
     git clone https://github.com/UCL/COMP0037-22_23.git
@@ -54,6 +54,6 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
     * Select "Find..."
         * Go to your virtual environment folder in "comp0037-labs" > Scripts > python.exe > Select Interpreter (Windows) 
         * Go to your virtual environment folder in "comp0037-labs" > bin > python.exe (or just python if you don't see the .exe extension)> Select Interpreter (Unix/MacOS) 
-    * Insted of "Select Interpreter" you should now see "3.x.x('venvcomp0088':venv)
+    * Insted of "Select Interpreter" you should now see "3.x.x('venvcomp0037':venv) or similar
 
 
