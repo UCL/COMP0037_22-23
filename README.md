@@ -16,7 +16,7 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
 * Download the material from GitHub: [COMP0037 Robotic Systems](https://github.com/UCL/COMP0037_22-23) and put the lab material in a folder named "comp0037-labs":
     ```
     cd comp0037-labs
-    git clone https://github.com/UCL/COMP0037-22_23.git
+    git clone https://github.com/UCL/COMP0037_22-23.git
     ```
 * Open the cloned folder in Visual Studio Code: File > Open Folder > select the cloned repository folder
 * Open a new terminal in Visual Studio Code and make sure you are in the folder 'comp0037-labs'
