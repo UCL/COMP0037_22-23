@@ -52,8 +52,8 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
     * Click on the button
     * Select "Enter interpreter path..."
     * Select "Find..."
-        * Go to your virtual environment folder in "comp0037-labs" > Scripts > python.exe > Select Interpreter (Windows) 
-        * Go to your virtual environment folder in "comp0037-labs" > bin > python.exe (or just python if you don't see the .exe extension)> Select Interpreter (Unix/MacOS) 
+        * Go to your virtual environment folder in "comp0037" > Scripts > python.exe > Select Interpreter (Windows) 
+        * Go to your virtual environment folder in "comp0037" > bin > python.exe (or just python if you don't see the .exe extension)> Select Interpreter (Unix/MacOS) 
     * Insted of "Select Interpreter" you should now see "3.x.x('venvcomp0037':venv) or similar
 
 
