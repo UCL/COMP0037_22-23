@@ -23,22 +23,22 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
 * Create and activate a virtual environment:
     ```
     cd comp0037-labs
-    python3 -m venv comp0037
+    python3 -m venv comp0037-venv
     # On Unix/MacOS:
-    source comp0037/bin/activate
+    source comp0037-venv/bin/activate
     # On Windows:
-    .\comp0037\Scripts\activate
+    .\comp0037-venv\Scripts\activate
     # Upgrade pip:
     python -m pip install --upgrade pip
     ```
      If you get the error "python3 : The term 'python3' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again", try using:
     ```
-    python -m venv comp0037
+    python -m venv comp0037-venv
     ```
     If you are encountering issues, you can create a conda environment
     ```
-    conda create -n comp0037 python=3.9 -y
-    conda activate comp0037
+    conda create -n comp0037-venv python=3.9 -y
+    conda activate comp0037-venv
     ```
 * Install Python package requirements:
     ```sh
@@ -52,8 +52,8 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
     * Click on the button
     * Select "Enter interpreter path..."
     * Select "Find..."
-        * Go to your virtual environment folder in "comp0037" > Scripts > python.exe > Select Interpreter (Windows) 
-        * Go to your virtual environment folder in "comp0037" > bin > python.exe (or just python if you don't see the .exe extension)> Select Interpreter (Unix/MacOS) 
+        * Go to your virtual environment folder in "comp0037-venv" > Scripts > python.exe > Select Interpreter (Windows) 
+        * Go to your virtual environment folder in "comp0037-venv" > bin > python.exe (or just python if you don't see the .exe extension)> Select Interpreter (Unix/MacOS) 
     * Insted of "Select Interpreter" you should now see "3.x.x('venvcomp0037':venv) or similar
 
 
