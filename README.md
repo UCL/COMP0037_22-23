@@ -48,7 +48,7 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
     ```sh
     pip install _package_
     ```
-* On the bottom left of you VS Code window you sould see a "Select Interpreter" button:
+* On the bottom left of you VS Code window you should see a "Select Interpreter" button:
     * Click on the button
     * Select "Enter interpreter path..."
     * Select "Find..."
