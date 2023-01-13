@@ -39,22 +39,11 @@ if __name__ == '__main__':
     # Q3b:
     # Plot the actions and rewards
 
-    # Plot action history
-    plt.figure()
-    plt.plot(action_history)
-    plt.xlabel('Step')
-    plt.ylabel('Arm Pulled')
+    plt.figure(1)
 
-    # Plot rewards
     plt.figure(2)
-    plt.xlabel('Sample number')
-    plt.ylabel('Reward')
-    plt.plot(reward_history, color = 'red', label = 'Reward')
-
-    # Do not block on the individual plots. Instead, wait for key
-    # press. A small pause is needed in some systems to stop blocking.
+    
     plt.ion()
     plt.show()
     plt.pause(0.001)
     input()
-    
