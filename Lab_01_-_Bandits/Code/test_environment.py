@@ -20,7 +20,7 @@ from bandits.bandit import BanditEnvironment
 def run_bandits(environment, number_of_steps):
 
     b = 0
-    rewards = numpy.zeros(1)
+    rewards = np.zeros(1)
     print(f'bandit = {b}, mean = {np.mean(rewards)}, sigma = {np.std(rewards)}')
         
 if __name__ == '__main__':
