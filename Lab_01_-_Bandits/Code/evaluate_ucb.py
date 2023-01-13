@@ -17,13 +17,20 @@ from bandits.performance_measures import compute_regret
 
 if __name__ == '__main__':
        # Create bandit
-    environment = BanditEnvironment(4)
+    environment = BanditEnvironment(10)
     
-    # Add some bandits
-    environment.set_bandit(0, Bandit(0, 1))    
-    environment.set_bandit(1, Bandit(0, 1))    
-    environment.set_bandit(2, Bandit(0.1, 1))
-    environment.set_bandit(3, Bandit(0, 1))
+    # Add some bandits. These use the actual values which generated
+    # the plots in the examples in the lectures.
+    environment.set_bandit(0, Bandit(0.1, 1))    
+    environment.set_bandit(1, Bandit(-0.5, 1))    
+    environment.set_bandit(2, Bandit(1.5, 1))
+    environment.set_bandit(3, Bandit(0.5, 1))
+    environment.set_bandit(4, Bandit(1.2, 1))
+    environment.set_bandit(5, Bandit(-1.5, 1))
+    environment.set_bandit(6, Bandit(-0.2, 1))
+    environment.set_bandit(7, Bandit(-1, 1))
+    environment.set_bandit(8, Bandit(0.5, 1))
+    environment.set_bandit(9, Bandit(-0.5, 1))
     
     number_of_steps = 10000
 
