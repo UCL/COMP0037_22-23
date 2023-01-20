@@ -197,7 +197,7 @@ class PlannerBase(object):
                 self._goal_reached = True
                 break
             cells = self.next_cells_to_be_visited(cell)
-            for nextCell in cells:
+            for next_cell in cells:
                 if (self.has_cell_been_visited_already(next_cell) == False):
                     self.mark_cell_as_visited_and_record_parent(next_cell, cell)
                     self.push_cell_onto_queue(next_cell)
