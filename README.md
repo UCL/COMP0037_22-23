@@ -10,6 +10,7 @@ Lab attendance will be monitored, but the exercises are **not graded**. You are 
 * Install [Python 3](https://www.python.org/downloads/) (if you don't already have it - AVOID PYTHON 3.10) 
 * Download [Visual Studio Code](https://code.visualstudio.com/), an easy-to-use editor
 * Install the [Python Plugin](https://code.visualstudio.com/docs/python/python-tutorial/) and test the hello world example
+* Install [Ghostscript](https://ghostscript.com/index.html). For Windows, use the [64-bit binary AGPL release](https://ghostscript.com/releases/gsdnld.html). For Mac, use home brew and run ``brew install ghoscript``. For Linux, use ``apt install ghostscript`` (or your preferred package manager).
 
 ## Install software to support this module (will be made available the first week of term)
 
