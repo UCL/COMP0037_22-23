@@ -1,7 +1,9 @@
+import locale
+import ghostscript
+import pyscreenshot as ImageGrab
+
 from .graphics import *
 from .graphics import _root
-
-import pyscreenshot as ImageGrab
 
 class GridDrawer(object):
 
@@ -40,14 +42,51 @@ class GridDrawer(object):
     
     # Save the window
     def save_screenshot(self, filename):
-        # From https://stackoverflow.com/questions/66672786
-        x=self._win.winfo_rootx()
-        y=self._win.winfo_rooty()
-        x1=x+self._win.winfo_width()
-        y1=y+self._win.winfo_height()
-        screenshot_rgba = ImageGrab.grab().crop((x,y,x1,y1))
-        screenshot_rgb = screenshot_rgba.convert("RGB")
-        screenshot_rgb.save(filename)
+        
+        # We store two versions. The first saves a pdf, the
+        # second supports all other types. pdf is recommended because
+        # the image is of much higher quality.
+        
+        print(f"Saving file {filename}")
+        
+        if filename.endswith("pdf"):
+
+            # From https://pypi.org/project/ghostscript/
+            # and https://stackoverflow.com/questions/57787990/
+            
+            # Save the file as postscript
+            self._win.postscript(file="tmp.ps", colormode="color")
+
+            # Set up the arguments and call ghostscript to
+            # do the conversion
+            args = [
+                "ps2pdf", # actual value doesn't matter
+                "-dNOPAUSE", "-dBATCH", "-dSAFER",
+                "-sDEVICE=pdfwrite",
+                "-sOutputFile=" + filename,
+                "-f",  "tmp.ps"
+                ]
+
+            encoding = locale.getpreferredencoding()
+            args = [a.encode(encoding) for a in args]
+
+            ghostscript.Ghostscript(*args)
+
+            # Delete the temporary file
+            os.remove("tmp.ps")
+            
+        else:
+        
+            # From https://stackoverflow.com/questions/66672786
+            x=self._win.winfo_rootx()
+            y=self._win.winfo_rooty()
+            x1=x+self._win.winfo_width()
+            y1=y+self._win.winfo_height()
+            screenshot_rgba = ImageGrab.grab().crop((x,y,x1,y1))
+            screenshot_rgb = screenshot_rgba.convert("RGB")
+            screenshot_rgb.save(filename)
+
+        print(f"Finished saving {filename}")
                
     def update(self):
         raise NotImplementedError()
