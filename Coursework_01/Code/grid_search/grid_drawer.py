@@ -51,8 +51,9 @@ class GridDrawer(object):
         
         if filename.endswith("pdf"):
 
-            # From https://pypi.org/project/ghostscript/
-            # and https://stackoverflow.com/questions/57787990/
+            # From https://pypi.org/project/ghostscript,
+            # https://stackoverflow.com/questions/57787990
+            # and https://stackoverflow.com/questions/51666941
             
             # Save the file as postscript
             self._win.postscript(file="tmp.ps", colormode="color")
@@ -61,7 +62,7 @@ class GridDrawer(object):
             # do the conversion
             args = [
                 "ps2pdf", # actual value doesn't matter
-                "-dNOPAUSE", "-dBATCH", "-dSAFER",
+                "-dNOPAUSE", "-dBATCH", "-dSAFER", "-dEPSCrop", 
                 "-sDEVICE=pdfwrite",
                 "-sOutputFile=" + filename,
                 "-f",  "tmp.ps"
