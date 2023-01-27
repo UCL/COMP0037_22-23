@@ -37,8 +37,8 @@ if __name__ == '__main__':
     # You will need to enable your implementation of Dijkstra
     airport_environment = HighLevelEnvironment(airport_map, PlannerType.DIJKSTRA)
     
-    # Set to True to get lots of (slow) graphics on the screen.
-    airport_environment.enable_verbose_graphics(False)
+    # Show the graphics
+    airport_environment.show_graphics(True)
     
     # First specify the start location of the robot
     action = (HighLevelActionType.TELEPORT_ROBOT_TO_NEW_POSITION, (0, 0))

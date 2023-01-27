@@ -56,9 +56,21 @@ class HighLevelEnvironment(gym.Env):
         
     def planner(self):
         return self._planner
+
+    def search_grid_drawer(self):
+        return self._planner.search_grid_drawer()
+
+    def show_graphics(self, graphics):
+        self._planner.show_graphics(graphics)
+
+        if graphics is False:
+            self._planner.update_graphics_each_iteration(graphics)
     
-    def enable_verbose_graphics(self, verbose_graphics):
-        self._planner.show_graphics(verbose_graphics)
+    def show_verbose_graphics(self, verbose_graphics):
+        if verbose_graphics is True:
+            self._planner.show_graphics(verbose_graphics)
+
+        print(verbose_graphics)
         self._planner.update_graphics_each_iteration(verbose_graphics)
     
     def step(self, action):        
