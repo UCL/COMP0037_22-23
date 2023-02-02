@@ -132,22 +132,6 @@ class AirportMap(CellGrid):
                 
         # Start without using the type-dependent traversability costs
         self._use_cell_type_traversability_costs = True
-
-        # This is used to specify if a cell type obstructs the robot or not
-        # Note that, to plan a path to a cell, we have to make that
-        # cell not an obstruction
-        self._is_obstruction = {
-            MapCellType.UNKNOWN: True,
-            MapCellType.WALL: True,
-            MapCellType.OPEN_SPACE: False,
-            MapCellType.BAGGAGE_CLAIM: True,
-            MapCellType.CUSTOMS_AREA: False,
-            MapCellType.SECRET_DOOR: False,
-            MapCellType.TOILET: True,
-            MapCellType.CHARGING_STATION: False,
-            MapCellType.RUBBISH_BIN: False,
-            MapCellType.CHAIR: True,    
-        }
     
     def resolution(self):
         return 1
@@ -208,7 +192,6 @@ class AirportMap(CellGrid):
     def add_rubbish_bin(self, x, y):
         cell = self._map[x][y]
         cell.set_cell_type(MapCellType.RUBBISH_BIN)
-        #cell.set_params((mean, covariance))
         self._rubbish_bins.append(cell)
         
     def rubbish_bin(self, rubbish_bin_num):
