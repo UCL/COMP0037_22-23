@@ -12,13 +12,12 @@ from generalized_policy_iteration.policy_iterator import PolicyIterator
 from generalized_policy_iteration.value_function_drawer import ValueFunctionDrawer
 
 from p2.low_level_environment import LowLevelEnvironment
-from p2.low_level_policy_drawer import LowLevelPolicyDrawer
 
 if __name__ == '__main__':
     
     # Get the map for the scenario
     #airport_map, drawer_height = three_row_scenario()
-    airport_map, drawer_height, drawer_height = full_scenario()
+    airport_map, drawer_height = full_scenario()
     
     # Set up the environment for the robot driving around
     airport_environment = LowLevelEnvironment(airport_map)
