@@ -57,7 +57,7 @@ class OffPolicyMCPredictor(MonteCarloPolicyPredictor):
         for s in range(episode.number_of_steps() - 1, -1, -1):
             
             # Work out the return              
-            G = G + self._gamma * episode.reward(s)
+            G = self._gamma * G  + episode.reward(s)
             
             a = episode.action(s)
             coords = episode.state(s).coords()

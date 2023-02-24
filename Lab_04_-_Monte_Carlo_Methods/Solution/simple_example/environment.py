@@ -114,7 +114,7 @@ class Environment(Env):
         #print(f"p={p}")
 
         # This is a simple way to sample from the multinomal disribution
-        i = self.np_random.uniform()
+        i = np.random.uniform()
         
         action_taken = 0
         i -= p[0]
