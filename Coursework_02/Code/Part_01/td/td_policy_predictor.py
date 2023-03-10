@@ -28,7 +28,7 @@ class TDPolicyPredictor(TDAlgorithmBase):
         for episode in range(self._number_of_episodes):
 
             # Choose the start for the episode            
-            start_x, start_a  = self._environment.random_initial_state()
+            start_x, start_a  = self._select_episode_start()
             self._environment.reset(start_x) 
             
             # Now sample it

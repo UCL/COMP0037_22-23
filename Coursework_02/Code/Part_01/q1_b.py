@@ -6,7 +6,7 @@ Created on 7 Mar 2023
 @author: steam
 '''
 
-from common.scenarios import three_row_scenario
+from common.scenarios import test_three_row_scenario
 from common.airport_map_drawer import AirportMapDrawer
 
 from monte_carlo.on_policy_mc_predictor import OnPolicyMCPredictor
@@ -20,7 +20,7 @@ from p1.low_level_actions import LowLevelActionType
 from p1.low_level_policy_drawer import LowLevelPolicyDrawer
 
 if __name__ == '__main__':
-    airport_map, drawer_height = three_row_scenario()
+    airport_map, drawer_height = test_three_row_scenario()
     env = LowLevelEnvironment(airport_map)
     env.set_nominal_direction_probability(0.8)
 
