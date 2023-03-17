@@ -108,7 +108,7 @@ class LowLevelPolicy(EpsilonGreedySoftPolicy):
         elif self._environment_map.cell(x, y).is_obstruction() is True:
             return LowLevelActionType.NONE
         else:
-            return random.randint(0, LowLevelActionType.TOTAL_NUMBER_OF_MOVE_ACTIONS)
+            return random.randint(0, LowLevelActionType.TOTAL_NUMBER_OF_MOVE_ACTIONS - 1)
     
     def airport_map(self):
         return self._airport_map
